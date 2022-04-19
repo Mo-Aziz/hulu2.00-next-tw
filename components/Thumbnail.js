@@ -15,7 +15,8 @@ const BASE_URL="https://image.tmdb.org/t/p/original/"
       `${BASE_URL}${result.backdrop_path || result.poster_path}` || `${BASE_URL}${result.poster_path}`
     }
     height={1080}
-    width={1920}/>
+    width={1920}
+    alt="movie-thumbnail"/>
     <div>
       <p className="truncate max-w-md">{result.overview}</p>
       <h2 className="mt-1 text-2xl text-white transition-all duration-100 ease-in-out group-hover:font-bold">{result.title || result.original_name}</h2>
